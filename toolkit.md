@@ -42,8 +42,23 @@ FastAPI is commonly used to deploy machine learning models as REST APIs.
 
 ---
 
-## 4. Installation & Setup Instructions
+## 4 .Installation & Setup Instructions (Quick Guide)
 
-### Step 1: Install Dependencies
+To run this project locally, follow these steps:
+
+1. Navigate to the project folder and run the following commands:
+
 ```bash
+cd data-api
+2. Create and activate virtual environment
+python -m venv venv
+source venv/Scripts/activate   # Windows (Git Bash)
+source venv/bin/activate      # Mac/Linux
+
+3. install required dependencies
+
 pip install fastapi uvicorn pandas
+
+4. Start the FastAPI server:
+
+python -m uvicorn main:app --reload
